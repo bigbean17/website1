@@ -1,0 +1,10 @@
+
+{% include 'header.html' %}
+
+<title>Forum</title>
+
+<h1>Welcome to our forum!</h1><br>
+
+{% for msg in messages %}
+    <p>{{ msg }}</p>
+{% endfor %}

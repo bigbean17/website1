@@ -1,0 +1,21 @@
+
+{% include "header.html" %}
+
+
+<title>Login</title>
+
+<form class="login" method="POST" action="{{url_for('login')}}">
+
+    <label>Username</label>
+    <input type = "text" placeholder = "username" name="username" required>
+    <label>Password</label>
+    <input type = "password" placeholder="password" name = "password" required>
+    <input type="submit">
+</form>
+
+
+<p>
+    Don't have an account? <a href="/register">Click me</a> to create a new account
+</p>
+
+<a href="/">Back to homepage </a>
